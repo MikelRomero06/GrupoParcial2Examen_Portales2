@@ -10,3 +10,5 @@ Route::get('/user', function (Request $request) {
 
 Route::get('/maintenance-orders', [MaintenanceOrderController::class, 'OrdenesMantenimientoProgramadas']);
 Route::get('/maintenance-orders/completed', [MaintenanceOrderController::class, 'OrdenesFinalizadasFechaEspecifica']);
+Route::get('/machines/production-lines', [MaintenanceOrderController::class, 'machinesWithProductionLine']);
+Route::get('/machines/maintenance-count', [MaintenanceOrderController::class, 'machinesWithMaintenanceCount']);

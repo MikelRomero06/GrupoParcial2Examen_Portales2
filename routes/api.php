@@ -12,3 +12,4 @@ Route::get('/maintenance-orders', [MaintenanceOrderController::class, 'OrdenesMa
 Route::get('/maintenance-orders/completed', [MaintenanceOrderController::class, 'OrdenesFinalizadasFechaEspecifica']);
 Route::get('/machines/production-lines', [MaintenanceOrderController::class, 'machinesWithProductionLine']);
 Route::get('/machines/maintenance-count', [MaintenanceOrderController::class, 'machinesWithMaintenanceCount']);
+Route::get('/machines/operational-critical', [MachineController::class, 'operationalCriticalMachines']);
